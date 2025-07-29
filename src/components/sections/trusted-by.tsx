@@ -59,7 +59,7 @@ export function TrustedBySection() {
               >
                 <div className="text-center">
                   <div className="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform duration-300">
-                    {client.logo}
+                    {client.name}
                   </div>
                   <div className="text-xs text-muted-foreground opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                     {client.category}

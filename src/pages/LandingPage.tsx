@@ -10,6 +10,7 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { PricingSection } from "../components/sections/pricing";
 import { PricingSectionWithSelector } from "../components/sections/PricingSectionWithSelector";
 import { FAQScreen } from "../components/sections/faq";
+import { TrustedBySection } from "@/components/sections/trusted-by";
 
 export default function LandingPage() {
   useScrollAnimation();
@@ -24,6 +25,7 @@ export default function LandingPage() {
        <PricingSection /> 
         <TestimonialsSection />
         <FAQScreen/>
+        <TrustedBySection />
         
         {/* Contact Section */}
         <section id="contact" className="py-20 px-4">
