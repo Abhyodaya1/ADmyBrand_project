@@ -43,12 +43,11 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-];
+  { icon: Facebook, href: "https://www.facebook.com/admybrand/", label: "Facebook" },
+  { icon: Twitter, href: "https://x.com/admybrand?lang=fa", label: "Twitter" },
+  { icon: Linkedin, href: "https://in.linkedin.com/company/admybrand", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/admybrand/?hl=en", label: "Instagram" },
+]
 
 export function Footer() {
   return (
