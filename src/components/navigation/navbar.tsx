@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Pricing", href: "#pricing" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
+  {label:"Our Clintele", href:"#trusted-by"},
 ];
 
 export function Navbar() {
