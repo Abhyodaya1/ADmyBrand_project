@@ -3,12 +3,10 @@ import { Navbar } from "@/components/navigation/navbar";
 import { HeroSection } from "@/components/sections/hero";
 import { FeaturesSection } from "@/components/sections/features";
 import { TestimonialsSection } from "@/components/sections/testimonials";
-import { FAQSection } from "@/components/sections/faq";
 import { Footer } from "@/components/sections/footer";
 import { ContactForm } from "@/components/forms/contact-form";
 import { GlassCard } from "@/components/ui/glass-card";
 import { PricingSection } from "../components/sections/pricing";
-import { PricingSectionWithSelector } from "../components/sections/PricingSectionWithSelector";
 import { FAQScreen } from "../components/sections/faq";
 import { TrustedBySection } from "@/components/sections/trusted-by";
 
