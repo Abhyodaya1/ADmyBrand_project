@@ -109,7 +109,10 @@ interface TooltipPayload {
 
 // Define the props for ChartTooltipContent
 interface ChartTooltipContentProps
-  extends React.ComponentProps<typeof RechartsPrimitive.Tooltip> {
+  extends Omit<
+    React.ComponentProps<typeof RechartsPrimitive.Tooltip>,
+    "formatter"
+  > {
   hideLabel?: boolean;
   hideIndicator?: boolean;
   indicator?: "line" | "dot" | "dashed";
