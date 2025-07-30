@@ -98,18 +98,41 @@ ${colorConfig
   )
 }
 
+interface TooltipPayload {
+  name?: string;
+  value?: number | string;
+  dataKey?: string;
+  color?: string;
+  payload?: any; // You can make this more specific based on your data
+  fill?: string;
+}
+
+// Define the props for ChartTooltipContent
+interface ChartTooltipContentProps
+  extends React.ComponentProps<typeof RechartsPrimitive.Tooltip> {
+  hideLabel?: boolean;
+  hideIndicator?: boolean;
+  indicator?: "line" | "dot" | "dashed";
+  nameKey?: string;
+  labelKey?: string;
+  className?: string;
+  label?:string;
+  color?:string;
+  formatter?: (
+    value: any,
+    name: string,
+    item: TooltipPayload,
+    index: number,
+    payload: TooltipPayload[]
+  ) => React.ReactNode;
+  payload?: TooltipPayload[]; // Explicitly define payload
+}
+
 const ChartTooltip = RechartsPrimitive.Tooltip
 
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
-  React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
-    React.ComponentProps<"div"> & {
-      hideLabel?: boolean
-      hideIndicator?: boolean
-      indicator?: "line" | "dot" | "dashed"
-      nameKey?: string
-      labelKey?: string
-    }
+    ChartTooltipContentProps
 >(
   (
     {
