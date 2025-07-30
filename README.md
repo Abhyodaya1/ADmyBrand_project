@@ -224,7 +224,7 @@ Instead of screenshots, the following prompt was used to guide the development a
      vercel
      ```
    - Configure environment variables (if any) in Vercel.
-   - Access the deployed site at the provided Vercel URL (e.g., `https://a-dmy-brand-project-uer2-git-master-abhyodaya1s-projects.vercel.app`).
+   - Access the deployed site at the provided Vercel URL  `https://a-dmy-brand-project-uer2-git-master-abhyodaya1s-projects.vercel.app`.
 
 ## Technologies Used
 
